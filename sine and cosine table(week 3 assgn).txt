@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+
+void print_sin_cos()//function declaration
+{
+    int st=0,s=0;
+    for(int x=0;x<5;x++)
+    {
+        if(x==2)
+        {
+            s=45;
+            printf("sin(%d)=%lf\n", s, fabs(sin(s)));
+            printf("cos(%d)=%lf\n", s, fabs(cos(s)));
+            continue;
+        }
+        else
+        {
+        printf("sin(%d)=%lf\n", st, fabs(sin(st)));
+        printf("cos(%d)=%lf\n", st, fabs(cos(st)));
+        st=st+30;
+        }
+    }
+}
+    
+int main()
+{
+    double st= 0;
+    print_sin_cos();//function call
+    return 0;
+}
