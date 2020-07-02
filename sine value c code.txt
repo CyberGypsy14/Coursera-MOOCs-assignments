@@ -1,0 +1,15 @@
+/* assignment for sine value */
+
+#include<stdio.h>
+#include<math.h>
+
+void main()
+{
+    double sinValue, number; /* variable declaration*/
+    printf("Enter the value of number to calculate its sine value: \n");
+    scanf("%lf", &number);
+    
+    sinValue=sin(number);  /* Calculate the Sine of value */
+    
+    printf("The sine value is: %f\n", sinValue); /* Display the result of the calculation */
+}
