@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+double square(double);
+double cube(double);
+
+void main()
+{
+    int i,j,how_many=0;
+    printf("I want square and cube of n where n is: \n");
+    scanf("%d",&how_many);
+    printf("the squares and cubes by interval of .1\n");
+    
+    for(i=0;i<how_many;i++)
+    for(j=0;j<10;j++)
+    printf("\n %lf\t %lf \t %lf", i+j/10.0, square(i+j/10.0), cube(i+(j/10.0)));
+    
+};
+ double square(double x)
+ {return(x*x);}
+  
+ double cube(double x)
+ {return(x*x*x);}
